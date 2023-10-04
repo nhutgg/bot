@@ -1308,7 +1308,66 @@
 
         /*    !*animation-fill-mode: forwards;*!*/
 
-        /*    !*-webkit-text-size-adjust: none;*!*/
+        /* Thiết lập các kiểu cho div chứa các liên kết */
+#link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Thiết lập kiểu cho các mục liên kết */
+.link-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Thiết lập kiểu cho hình ảnh nền */
+.bio-story-thumb {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Thiết lập kiểu cho nội dung liên kết */
+.link-content {
+    flex: 1;
+}
+
+/* Thiết lập kiểu cho tiêu đề và mô tả liên kết */
+.link-content p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.link-content span {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Thiết lập kiểu cho nút INSTALL */
+.link-btn-chill {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Thiết lập kiểu cho nút INSTALL khi được hover */
+.link-btn-chill:hover {
+    background-color: darkorange;
+}
+
 
         .featured-subscribers.hide-subscribers {
             display: none
@@ -5055,10 +5114,10 @@
                         <div class="bio-story-thumb" style="background-image: url('./image/serdykee.png');"></div>
                         <div class="link-content">
                             <p>SerdyKee</p>
-                            <span onclick="window.open('https://github.com/nhutnguyenminh2/test-dev/blob/main/mobileconfig/dnsgg.mobileconfig', '_blank')">Chặn thu hồi chứng chỉ, quảng cáo ...</span>
+                            <span onclick="window.open('https://nhutnguyenminh2.github.io/test-dev/dnsgg.mobileconfig', '_blank')">Chặn thu hồi chứng chỉ, quảng cáo ...</span>
                         </div>
                         <div class="link-btn">
-                            <div class="link-btn-chill light-orange" onclick="window.open('https://github.com/nhutnguyenminh2/test-dev/blob/main/mobileconfig/dnsgg.mobileconfig', '_blank')">INSTALL</div>
+                            <div class="link-btn-chill light-orange" onclick="window.open('https://nhutnguyenminh2.github.io/test-dev/mobileconfig/dnsgg.mobileconfig', '_blank')">INSTALL</div>
                         </div>
                     </div>
                 </div>
