@@ -1309,51 +1309,34 @@
         /*    !*animation-fill-mode: forwards;*!*/
 
         /* cssgg*/
+      
+      .link-content {
+    color: white; /* Đổi màu chữ thành màu trắng */
+}
 .link-item {
     display: flex;
-    align-items: center;
-    background-color: #fff; /* Màu nền */
-    border-radius: 8px; /* Làm tròn góc */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    padding: 10px;
-    max-width: 300px; /* Điều chỉnh độ rộng tối đa của khung */
-    margin: 0 auto; /* Canh giữa khung */
+    justify-content: space-between; /* Dư ra một đoạn bên phải */
+    align-items: center; /* Canh giữa các phần tử */
+    padding: 10px; /* Khoảng cách giữa các phần tử */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 10px; /* Bo tròn khung */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
 }
-
 .link-item:hover {
-    transform: scale(1.05); /* Phóng to khi hover */
+    transform: scale(1.1); /* Phóng to khi hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Tăng độ sắc nét của bóng đổ */
 }
-
-.bio-story-thumb {
-    width: 80px; /* Kích thước của hình ảnh */
-    height: 80px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; /* Làm tròn góc */
-    margin-right: 10px;
+.bio-story-thumb-round {
+    width: 50px; /* Kích thước của hình ảnh */
+    height: 50px; /* Kích thước của hình ảnh */
+    border-radius: 50%; /* Bo tròn hình ảnh */
+    overflow: hidden; /* Ẩn phần ngoài khung */
 }
 
-.link-content {
-    flex-grow: 1;
+.bio-story-thumb-round img {
+    width: 100%; /* Kích thước ảnh 100% của khung */
+    height: auto; /* Tự động tính chiều cao */
 }
-
-.link-content p {
-    margin: 0;
-}
-
-.description {
-    color: #333; /* Màu chữ */
-    font-weight: bold;
-    user-select: none;
-}
-
-.link-btn {
-    margin-left: 10px;
-}
-
 .link-btn-chill {
     background-color: #007bff; /* Màu nền nút */
     color: #fff; /* Màu chữ nút */
@@ -5121,16 +5104,19 @@
                         <path fill="#ffffff" fill-rule="nonzero" d="M10.893 0h2.317c6.016 0 10.893 4.877 10.893 10.893 0 .068 0 .135-.002.202l-.021 1.16a3.5 3.5 0 0 1-5.988 2.396c-1.878-1.9-3.891-2.85-6.04-2.85-2.15 0-4.163.95-6.04 2.85a3.5 3.5 0 0 1-5.989-2.396l-.021-1.16C-.11 5.08 4.677.113 10.692.002L10.893 0zm4.79 9.532a1.362 1.362 0 1 0 0-2.724 1.362 1.362 0 0 0 0 2.724zm3.63-1.816a1.362 1.362 0 1 0 0-2.723 1.362 1.362 0 0 0 0 2.723zm-11.8-1.362V4.54a.454.454 0 0 0-.454-.454H6.15a.454.454 0 0 0-.454.454v1.815H3.881a.454.454 0 0 0-.453.454v.908c0 .25.203.454.453.454h1.816v1.816c0 .25.203.453.454.453h.908c.25 0 .454-.203.454-.453V8.17h1.815c.25 0 .454-.203.454-.454v-.908a.454.454 0 0 0-.454-.454H7.513z"></path>
                     </svg><span class="GG--style16">CẤU HÌNH</span></div>
               
-                <div id="link-box" class="link-item">
-    <div class="bio-story-thumb" style="background-image: url('https://cdn.glitch.global/e751d0a4-1c8b-4509-bc52-77c5508cdc15/1.png?v=1696399826377');"></div>
+               <div id="link-box" class="link-item">
+    <div class="bio-story-thumb-round">
+        <img src="https://cdn.glitch.global/e751d0a4-1c8b-4509-bc52-77c5508cdc15/1.png?v=1696399826377" alt="NhutGG"/>
+    </div>
     <div class="link-content">
-        <p><strong>NhutGG</strong></p>
-        <span class="description">Chặn thu hồi chứng chỉ, quảng cáo ...</span>
+        <p><strong>DNS-over-HTTPS BY NhutGG</strong></p>
+        <span class="description">DNS chặn thu hồi chứng chỉ,chặn quảng cáo</span>
     </div>
     <div class="link-btn">
         <div class="link-btn-chill small" onclick="window.open('https://nhutnguyenminh2.github.io/test-dev/mobileconfig/dnsgg.mobileconfig', '_blank')">INSTALL</div>
     </div>
 </div>
+
 
 
 
