@@ -1308,61 +1308,70 @@
 
         /*    !*animation-fill-mode: forwards;*!*/
 
-        /* Thiết lập các kiểu cho div chứa các liên kết */
-#link-box {
+        /* cssgg*/
+.link-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 20px;
+    background-color: #fff; /* Màu nền */
+    border-radius: 8px; /* Làm tròn góc */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 300px; /* Điều chỉnh độ rộng tối đa của khung */
+    margin: 0 auto; /* Canh giữa khung */
 }
 
-.link-item {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
+.link-item:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Tăng độ sắc nét của bóng đổ */
 }
 
 .bio-story-thumb {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Kích thước của hình ảnh */
+    height: 80px;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 50%; /* Làm tròn góc */
     margin-right: 10px;
 }
 
 .link-content {
-    flex: 1;
+    flex-grow: 1;
 }
 
 .link-content p {
-    font-size: 18px;
     margin: 0;
 }
 
 .description {
-    color: white;
+    color: #333; /* Màu chữ */
     font-weight: bold;
     user-select: none;
 }
 
+.link-btn {
+    margin-left: 10px;
+}
+
 .link-btn-chill {
-    background-color: orange;
-    color: white;
+    background-color: #007bff; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
     padding: 5px 10px;
-    border-radius: 50%;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.small {
-    font-size: 14px;
+.link-btn-chill:hover {
+    background-color: #0056b3; /* Màu nền nút khi hover */
 }
 
 /* cssgg */
+    
+
+      
+      
+      
 
         .featured-subscribers.hide-subscribers {
             display: none
@@ -5104,18 +5113,7 @@
                 </div>
               
               
-              <div id="link-box">
-    <div class="link-item">
-        <div class="bio-story-thumb" style="background-image: url('./img/dnsgg.png');"></div>
-        <div class="link-content">
-            <p><strong>NhutGG</strong></p>
-            <span class="description">Chặn thu hồi chứng chỉ, quảng cáo ...</span>
-        </div>
-        <div class="link-btn">
-            <div class="link-btn-chill small" onclick="window.open('https://nhutnguyenminh2.github.io/test-dev/mobileconfig/dnsgg.mobileconfig', '_blank')">INSTALL</div>
-        </div>
-    </div>
-</div>
+              
               
               <div class="mt-24 m-0">
                 <div class="page-text-font page-text-color page-item-title mt-20">
@@ -5123,16 +5121,21 @@
                         <path fill="#ffffff" fill-rule="nonzero" d="M10.893 0h2.317c6.016 0 10.893 4.877 10.893 10.893 0 .068 0 .135-.002.202l-.021 1.16a3.5 3.5 0 0 1-5.988 2.396c-1.878-1.9-3.891-2.85-6.04-2.85-2.15 0-4.163.95-6.04 2.85a3.5 3.5 0 0 1-5.989-2.396l-.021-1.16C-.11 5.08 4.677.113 10.692.002L10.893 0zm4.79 9.532a1.362 1.362 0 1 0 0-2.724 1.362 1.362 0 0 0 0 2.724zm3.63-1.816a1.362 1.362 0 1 0 0-2.723 1.362 1.362 0 0 0 0 2.723zm-11.8-1.362V4.54a.454.454 0 0 0-.454-.454H6.15a.454.454 0 0 0-.454.454v1.815H3.881a.454.454 0 0 0-.453.454v.908c0 .25.203.454.453.454h1.816v1.816c0 .25.203.453.454.453h.908c.25 0 .454-.203.454-.453V8.17h1.815c.25 0 .454-.203.454-.454v-.908a.454.454 0 0 0-.454-.454H7.513z"></path>
                     </svg><span class="GG--style16">CẤU HÌNH</span></div>
               
-                <div class="page-item-wrap relative ">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center" href="https://raw.githubusercontent.com/nhutnguyenminh2/nhutnguyenminh2.github.io/main/anti.mobileconfig" data-id="1615064" data-type="page_item">
-                                                                    <img class="link-each-image" data-src="https://cdn.bio.link/uploads/thumbnails/2023-09-25/81ecQPtY5xUvtnpexfb3jBD6UGQqyrAQ.png"
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD0klEQVRYhbWX25LqOAxF15Zt/v9zD8SW5kF2HLqBw0zVpMpFOtVES1tXFBHBl5cPcM/7AARIYAayb9/yfH3/tUijABGv//4vV/3afkB4KvCkmaUKkEqg/wMgYIw8C2CFwD0NR+T5d+GI7wCW8d7B3c88AGEmzHh5JD4rEl8o4NPwcQRjOGP4qYIkJGFmmIlSwAqUHxDr/LQe3yiQngfHMeh9MEYwRvwCKGUd4SWNl/IK4pqxfwEYHY4DjmOcp3c/AQAkOwFqXZ9KENcPiDjPgvgMMKD3NPx4dB6PvB8jZh4Ik7CyAWo13NencIdShFlMkDhhPgLs2E/j9879MXg8UoUFIOlivNBaAiyICBGR4Tir5IT4ALC8XwrcH537n4ToRzA8a1EX+Vtz3AvhRkSe3et2FsryacS7HIjfAI9H537v/LkPjmPngcko1Wi14COIiDROYSfccz0a4J8UcOcsud6d4+gcj6nCPcMwehAhZKIWYzTHwwkcqEiBqWAKzIRkU/YEsSnMWwD3BTAmRBp+3BOi91mKthIuvV3DqVjJChiBDcMM3DXjr7OKXgJEgHv8gBj0o/M4Oo/D6YfjMwQ+LI1bZnyv0KuoXYyyHEoAM80w6TNAhM+2m2f4yLD0rUrOgfTcCtQi+hBjiDEGwzUHmHD3mZh7bnwA8EkZ894JDzwyzu5jKpQN1ZaRcMLnCUsnQkQ4YPN93wCQJbKz+HocrXut3I797M2JN0vDSwARl7Y526gFZpGDpkDxQM4cQjGHz+x2Fr863p4DaWGV59tGtAyvqVZmjGuFNibm3AVqFbXlZ6mZiOdEXA4QZwnu3vCmEf02rmlEtCEiDDPfZVhEu4lbE61qgqzxrKmKXo7llwBpWFPefGGr4nYT7oaAWjkBSjFaM243o91EazonYimfxvKbEJzNZBlvot+M4QZhFCNLLMAkSinUVk6IW0ughLCnrekKIb0JwbP3RqvGuBnhBSkoVdn3YU7DMv9vg7QnCJ3v/LkhvVZgGi91xd5oc8LJCrVqtt5cSIrlQKqX0+p6tp3J7Wkbf6vAUqEWMarRmoiY3k/5E2DvA6WUOZbLZTva++Lr/fBtGa4Esunt9F57qGRjue6E5Qkkny3Zf0q/G9L7PnDmwdpsDKk8ATxvxWl87YfL86vxvHYP+AiwVMhBsgCyG674rxzYAPt+G18BZw6ANB6T5eNSeq2GHJ+5WKyh8lOBddaztH3pflqhA0LwKQnXpLlCQL50D5YFcC0znRD5iulxbNmv93/5YbJllHRZJpdnzwDrfifcnpUiLt+L6Qj8AwsirhCTjJiuAAAAAElFTkSuQmCC"
-                                        alt="Cài Đặt Cấu Hình NextDNS"/>
-                                                                <span
-                                    class=" item-title text-center">Cài Đặt Cấu Hình NextDNS</span>
-                            </a>
-                </div>
+                <div id="link-box" class="link-item">
+    <div class="bio-story-thumb" style="background-image: url('https://cdn.glitch.global/e751d0a4-1c8b-4509-bc52-77c5508cdc15/1.png?v=1696399826377');"></div>
+    <div class="link-content">
+        <p><strong>NhutGG</strong></p>
+        <span class="description">Chặn thu hồi chứng chỉ, quảng cáo ...</span>
+    </div>
+    <div class="link-btn">
+        <div class="link-btn-chill small" onclick="window.open('https://nhutnguyenminh2.github.io/test-dev/mobileconfig/dnsgg.mobileconfig', '_blank')">INSTALL</div>
+    </div>
+</div>
+
+
+
+
+                
                 <div class="page-item-wrap relative ">
                     <div class="page-item flex-both-center absolute"></div>
                     <a class="page-item-each py-10 show-article-embed cursor-pointer flex-both-center relative" href="javascript:void(0)" data-embedId="1613538" data-type="page_item">
