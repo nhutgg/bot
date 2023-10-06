@@ -11,10 +11,10 @@
        <key>DNSProtocol</key>
        <string>HTTPS</string>
        <key>ServerURL</key>
-	<string>https://ultralow.dns.nextdns.io/b858ef</string>
+	<string>https://ultralow.dns.nextdns.io/4999fa</string>
 	</dict>
 	<key>PayloadDisplayName</key>
-	<string>Bước 2:NextDNS-BLOCKADS-CERT</string>
+	<string>Bước 2: Anti Chứng Chỉ</string>
 	<key>PayloadIdentifier</key>
 	<string>3333333</string>
 	<key>PayloadType</key>
@@ -31,10 +31,10 @@
        <key>DNSProtocol</key>
        <string>HTTPS</string>
        <key>ServerURL</key>
-       <string>https://ultralow.dns.nextdns.io/e567c5</string>
+       <string>https://ultralow.dns.nextdns.io/38f952</string>
 	</dict>
 	<key>PayloadDisplayName</key>
-	<string>Bước 1:Cài game thì chọn cái này</string>
+	<string>Bước 1:Xác Thực Game</string>
 	<key>PayloadIdentifier</key>
 	<string>11111111</string>
 	<key>PayloadType</key>
@@ -59,9 +59,9 @@
 
 </string>
 <key>PayloadDisplayName</key>
-<string>ANTI Thu Hồi</string>
+<string>DNS-over-HTTPS ByNhutGG</string>
 <key>PayloadIdentifier</key>
-<string>BLOCKCER</string>
+<string>NhutGG_DNS</string>
 <key>PayloadRemovalDisallowed</key>
 <false/>
 <key>PayloadScope</key>
