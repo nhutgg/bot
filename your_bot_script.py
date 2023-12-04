@@ -1,11 +1,14 @@
 import os
-from telebot import TeleBot
+from telebot import TeleBot, types
 
-# Replace 'YOUR_BOT_TOKEN' with the actual token you received from BotFather
-bot_token = os.getenv('BOT_TOKEN')
+# Đọc token từ biến môi trường
+bot_token = os.environ.get('BOT_TOKEN')
+if bot_token is None:
+    raise ValueError("BOT_TOKEN không được tìm thấy trong biến môi trường.")
+
 bot = TeleBot(bot_token)
 
-from telebot import types
+# Các đoạn mã khác ở đây không thay đổi
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
